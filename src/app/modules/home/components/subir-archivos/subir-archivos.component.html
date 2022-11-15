@@ -1,0 +1,15 @@
+<h1 class="text-center">Subir archivos</h1>
+
+<div class="bg-warning border border-dark rounded-3 px-2">
+
+  <div class="py-3 menus">
+    <label class="form-label my-2" for="archivo">Seleccione un archivo para subir al servidor</label>
+    <input class="form-control my-2 border-dark" type="file" id="archivo" (change)="getFile($event)">
+  </div>
+
+  <div class="pb-3 d-flex justify-content-center menus">
+    <button mat-raised-button type="submit" class="btn btn-info w-75 border border-dark"
+      (click)="sendFile($event)">Enviar</button>
+  </div>
+
+</div>
